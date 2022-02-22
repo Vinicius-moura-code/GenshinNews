@@ -1,0 +1,49 @@
+.container-carrossel{
+  width: 675px;
+  height: 245px;
+  padding: 3px 3px;
+  background-color: #f3f3f381;
+}
+
+.container-carrossel::-webkit-scrollbar {
+  height: 12px;
+}
+
+.container-carrossel::-webkit-scrollbar-track {
+  background: #1f46f6a9;
+}
+
+.container-carrossel::-webkit-scrollbar-thumb {
+  background-color: #23232e;
+  border-radius: 20px;
+  border: 3px solid #1f46f6a9;
+}
+
+.container-carrossel {
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.tocards{
+  width: 500%;
+  display: flex;
+  animation-name: animac;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+}
+.tocards .card{
+}
+
+@keyframes animac{
+  0% { margin-left: 0; }
+  20% { margin-left: 0; }
+  25% { margin-left: -100%; }
+  45% { margin-left: -100%; }
+  50% { margin-left: -200%; }
+  70% { margin-left: -200%; }
+  75% { margin-left: -300%; }
+  95% { margin-left: -300%; }
+  100% { margin-left: -400%; }
+
+
+}
