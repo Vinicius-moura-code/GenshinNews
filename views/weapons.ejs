@@ -2,10 +2,23 @@
 <html lang="en">
   <%- include('partials/head', {page: 'Weapons'}); %>
 
-<body>
-  <div class="container">
-    <%- include('components/Header/header'); %>
-    <%- include('components/Footer/footer'); %>
-  </div>
-</body>
+  <body>
+    <div class="container">
+      <%- include('components/Header/header'); %>
+      <h1 style="display: flex; align-items: center; justify-content: center">
+        Armas
+      </h1>
+
+      <main style="display: flex; align-items: center; justify-content: center">
+        <section class="container-carrossel">
+          <div class="tocards">
+            <% for(let i = 0; i < arm.length; i++ ){ %> <%-
+            include('components/Card/card', { urlImg : arm[i].urlImg,
+            cardbodytitle: arm[i].name, cardbodytext: arm[i].text }); %> <% } %>
+          </div>
+        </section>
+      </main>
+      <%- include('components/Footer/footer'); %>
+    </div>
+  </body>
 </html>

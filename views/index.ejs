@@ -2,13 +2,41 @@
 <html lang="en">
   <%- include('partials/head', {page: 'Home'}); %>
 
-<body>
-  <div class="container">
-    <%- include('components/Header/header'); %>
-    <main>
+  <body>
+    <div class="container">
+      <%- include('components/Header/header'); %>
+      <main style='justify-content: center;'>
+        <div class="container-iframe">
+          <aside class="cont" style="border-radius: 5px 0 0 5px">
+            <h3>Nota de Atualização</h3>
+            <p style="text-align: justify">
+              A miHoYo anunciou que o update 2.4 de Genshin Impact será lançado
+              no dia 5 de janeiro de 2022. A atualização incluirá uma nova área
+              chamada Enkanomiya, o retorno do evento Rito da Lanterna,
+              personagens jogáveis inéditas, uma arma e um boss.
+            </p>
+          </aside>
 
-    </main>
-    <%- include('components/Footer/footer'); %>
-  </div>
-</body>
+          <iframe
+            class="responsive-iframe"
+            src="https://www.youtube.com/embed/xJ5CzR58TP0?autoplay=1&origin=https://youtu.be/xJ5CzR58TP0"
+            allow="autoplay"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+
+          <aside class="cont" style="border-radius: 0 5px 5px 0; ">
+            <h3>2.4</h3>
+            <p style="text-align: justify">
+              O update 2.4 de Genshin Impact também terá uma lança de cinco
+              estrelas, intitulada de “Subjugadora de Calamidades”. Por fim, a
+              atualização incluirá o boss “Defensor Oceânico” para os jogadores
+              tentarem o derrotar.
+            </p>
+          </aside>
+        </div>
+      </main>
+      <%- include('components/Footer/footer'); %>
+    </div>
+  </body>
 </html>

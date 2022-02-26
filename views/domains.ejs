@@ -2,10 +2,120 @@
 <html lang="en">
   <%- include('partials/head', {page: 'Domains'}); %>
 
-<body>
-  <div class="container">
-    <%- include('components/Header/header'); %>
-    <%- include('components/Footer/footer'); %>
-  </div>
-</body>
+  <body>
+    <div class="container">
+      <%- include('components/Header/header'); %>
+      <main>
+      <div class="content">
+        <%- include('components/Card/card', { urlImg :
+        'assets/dominios/Emblem_Domains.png', cardbodytitle: 'Dominios',
+        cardbodytext: '' }); %>
+        
+          <p>
+            <b>Domínios</b> são locais parecidos com templos em Genshin Impact.
+            Completar os desafios dentro dos domínios dá vários itens e
+            materiais como recompensa, tais como Artefatos, Materiais de
+            Elevação de Talento, Materiais de Elevação de Personagem, Mora, EXP
+            de Aventura, Materiais de Ascensão de Armas e EXP de Amizade em
+            troca de Resina Original.
+          </p>
+          <%- include('components/Card/card', { urlImg :
+          'assets/dominios/Emblem_Domains.png', cardbodytitle: 'Domínios de Desafio',
+          cardbodytext: '' }); %>
+                    <p>
+            Estes domínios têm três estágios abertos em uma ordem específico.
+            Cada estágio é aberto durante três dias por semana; dois dias
+            específicos e no domingo, que vale para todos os domínios do tipo.
+          </p>
+          <%- include('components/Card/card', { urlImg :
+          'assets/dominios/Emblem_Domains.png', cardbodytitle: 'Domínio do Forjamento',
+          cardbodytext: '' }); %>
+          
+          <p>
+            Domínios do Forjamento recompensam com Materiais de Ascensão de
+            Armas. Estes materiais podem ser usados ascender armas, melhorando
+            os atributos das armas e aumentando o nível máximo.
+          </p>
+          <%- include('components/Card/card', { urlImg :
+          'assets/dominios/Emblem_Domains.png', cardbodytitle: 'Domínio da Bênção',
+          cardbodytext: '' }); %>
+                  <p>
+            Domínios da Bênção recompensam com Artefatos. Os artefatos aumentam
+            a força dos personagens de muitas maneiras. Os jogadores terão que
+            completar o capítulo do prólogo das Missões do Arconte antes de
+            desbloqueá-los.
+          </p>
+          <%- include('components/Card/card', { urlImg :
+          'assets/dominios/Emblem_Domains.png', cardbodytitle: 'Domínios da Proficiência',
+          cardbodytext: '' }); %>
+          </b>
+          <p>
+            Domínios da Proficiência recompensam com Materiais de Elevação de
+            Talento. Estes materiais podem ser usados para fortalecer os
+            talentos de um personagem.
+          </p>
+          <%- include('components/Card/card', { urlImg :
+          'assets/dominios/Emblem_Domains.png', cardbodytitle: 'Domínio da Punição',
+          cardbodytext: '' }); %>
+                   <p>
+            Domínios da Punição ou Domínios Dizimados contêm Chefes Semanais
+            poderosos que podem ser desafiados após completar suas respectivas
+            Missões do Arconte ou Lendárias. Eles podem ser acessados em todos
+            os dias da semana. Os Domínios Dizimados contêm oponentes muito
+            poderosos. Depois de completar o desafio com sucesso, você pode
+            obter várias recompensas. Os jogadores podem completar este domínio
+            quantas vezes quiserem, mas só podem receber recompensas uma vez por
+            semana usando 30 Resina Original para abrir a Flor da Linha Ley -
+            Flor da Punição para os três primeiros Chefes Semanais, e 60 Resinas
+            Originais subsequentemente. As recompensas são renovadas
+            semanalmente às 04:00 toda segunda-feira (GMT-5).
+          </p>
+          <%- include('components/Card/card', { urlImg :
+          'assets/dominios/abismo.png', cardbodytitle: 'Abismo do Espiral',
+          cardbodytext: '' }); %>
+                  <p>
+            Abismo do Espiral é um tipo especial de domínio que muda com o
+            tempo. É desbloqueado no Rank de Aventura 20 e pode ser acessado
+            através da fenda espacial no céu à beira do Cabo do Juramento. Cada
+            estágio do Abismo Espiral conta como um desafio de domínio para o
+            Passe de Batalha.
+          </p>
+          <%- include('components/Card/card', { urlImg :
+          'assets/dominios/Emblem_Domains.png', cardbodytitle: 'Domínios Únicos',
+          cardbodytext: '' }); %>
+                <p>
+            Domínios Únicos são domínios únicos que são simbolizados por um
+            círculo azul menor que fornecem uma recompensa fixa na primeira vez
+            em que um jogador os completa. Eles ainda ficam abertos após a
+            primeira conclusão, mas não darão nenhuma recompensa. Os Domínios
+            Únicos aumentam o Rank de Aventura através de suas recompensas de
+            EXP de Aventura e às vezes oferecem receitas únicas de Alimentos,
+            bem como Gemas Essenciais.
+          </p>
+          <%- include('components/Card/card', { urlImg :
+          'assets/dominios/Emblem_Domains.png', cardbodytitle: 'Domínios da História',
+          cardbodytext: '' }); %>
+          
+          <p>
+            Domínios da História são domínios únicos que só podem ser acessados
+            como parte de uma Missão do Arconte, Lendária ou do Mundo. Uma vez
+            que estejam completos, não podem mais ser visitados, portanto,
+            deve-se verificar cuidadosamente se há baús escondidos.
+          </p>
+          <%- include('components/Card/card', { urlImg :
+          'assets/dominios/Emblem_Domains.png', cardbodytitle: 'Domínios de Eventos' }); %>
+                    <p>
+            Domínios de Evento, Domínio Peculiar ou Reino Distorcido são
+            domínios presentes apenas durante o período do evento e fechados
+            após, não sendo mais possível fazer o desafio. Normalmente estes
+            domínios são reconhecidos pelo ícone Icon Peculiar Wonderland.svg no
+            mapa. Cada um tem mecânicas e recompensas próprias de cada evento.
+          </p>
+        
+      
+        </div>
+        </main>
+      <%- include('components/Footer/footer'); %>
+    </div>
+  </body>
 </html>

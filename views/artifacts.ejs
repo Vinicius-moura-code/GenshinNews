@@ -2,10 +2,23 @@
 <html lang="en">
   <%- include('partials/head', {page: 'Artifacts'}); %>
 
-<body>
-  <div class="container">
-    <%- include('components/Header/header'); %>
-    <%- include('components/Footer/footer'); %>
-  </div>
-</body>
+  <body>
+    <div class="container">
+      <%- include('components/Header/header'); %>
+      <h1 style="display: flex; align-items: center; justify-content: center">
+        Artefatos
+      </h1>
+
+      <main style="display: flex; align-items: center; justify-content: center">
+        <section class="container-carrossel">
+          <div class="tocards">
+            <% for(let i = 0; i < art.length; i++ ){ %> <%-
+            include('components/Card/card', { urlImg : art[i].urlImg,
+            cardbodytitle: art[i].name, cardbodytext: art[i].text }); %> <% } %>
+          </div>
+        </section>
+      </main>
+      <%- include('components/Footer/footer'); %>
+    </div>
+  </body>
 </html>
