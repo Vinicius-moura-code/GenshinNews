@@ -7,3 +7,6 @@
 --  Digite 'npm init' ou 'yarn start' para rodar a aplicação
 
 --- Para acessar a aplicação: http://localhost:8080/
+
+
+Link do repositorio: https://github.com/Vinicius-moura-code/GenshinNews
